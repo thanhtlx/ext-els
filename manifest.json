@@ -1,0 +1,28 @@
+{
+    "name": "Thanhtlx extensions",
+    "description": "Extension support for thanhtlx",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "declarativeContent",
+        "activeTab",
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://els.edu.vn/lesson/result*"
+    ],
+    "background" : {
+        "service_worker": "js/popup.js"
+    },
+    "action": {
+        "default_title": "Thanhtlx extensions",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+    }
+}
